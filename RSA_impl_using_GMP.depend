@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1553601454 source:c:\users\inception\documents\rsa_impl_using_gmp\main.cpp
+	<iostream>
+	<stdlib.h>
+	<stdio.h>
+	<gmp.h>
+
+1035175203 c:\users\inception\desktop\gmp demo\gmplib\gmp\include\gmp.h
+	<iosfwd>
+	<cstddef>
+	<stddef.h>
+

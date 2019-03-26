@@ -134,8 +134,13 @@ int prime_num()
         printf("Invert failed\n");
     }
     printf("private key[d]= [%s]\n", mpz_get_str(NULL,10,d));
-    mpz_set_ui(msg,34534785);
+    char original_msg[1024];
+    cout<<"Enter your message (Numerical): ";
+    cin>>original_msg;
 
+    mpz_set_ui(msg,0);
+    mpz_set_str(msg,original_msg,10);
+    printf("orginal msg = [%s]\n", mpz_get_str(NULL,10,msg));
 
     mpz_powm(v,msg,e,n);//v=(l^e) mod n
     printf("Encrypt msg = [%s]\n", mpz_get_str(NULL,10,v));
